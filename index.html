@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FCC: Technical Documentation Page</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#html">HTML</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#head">head</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#title">title</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#body">body</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#header">header</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#footer">footer</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#article">article</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#section">section</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#p">p</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#div">div</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#span">span</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#img">img</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#embed">embed</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#progress">progress</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#nav">nav</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#ul">ul</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#ol">ol</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#li">li</a>
+                </li>
+            </ul>
+        </header>
+    </nav>
+
+    <!-- HTML Section -->
+    <main id="main-doc">
+        <section class="main-section" id="html">
+
+            <header>
+                <h1>
+                    html
+                </h1>
+            </header>
+            <p>
+                HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and
+                structure of web content. Other technologies besides HTML are generally used to describe a web page's
+                appearance/presentation (CSS) or functionality/behavior (JavaScript).
+
+                "Hypertext" refers to links that connect web pages to one another, either within a single website or
+                between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and
+                linking it to pages created by other people, you become an active participant in the World Wide Web.
+
+                HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup
+                includes special "elements" such as:
+            </p>
+
+            <ul class="ul-container">
+                <li>
+                    <span class="note-dec">Note</span>: &#x3C;head&#x3E; primarily holds information for machine
+                    processing, not human-readability. For human-visible information, like top-level headings and listed
+                    authors, see the &#x3C;header&#x3E; element.
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- Head Section -->
+        <section class="main-section" id="head">
+
+            <header>
+                <h2>
+                    head
+                </h2>
+            </header>
+
+            <p>
+                The &#x3C; head &#x3E; HTML element contains machine-readable information (metadata) about the document,
+                like its title, scripts, and style sheets.
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html lang=&#x22;en-US&#x22;&#x3E;
+    &#x3C;head&#x3E;
+        &#x3C;meta charset=&#x22;UTF-8&#x22; /&#x3E;
+        &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width&#x22; /&#x3E;
+        &#x3C;title&#x3E;Document title&#x3C;/title&#x3E;
+    &#x3C;/head&#x3E;
+&#x3C;/html&#x3E;
+</pre>
+            </code>
+
+        </section>
+
+        <!-- Title Section -->
+        <section class="main-section" id="title">
+
+            <header>
+                <h2>
+                    title
+                </h2>
+            </header>
+
+            <p>
+                The &#x3C;title&#x3E; HTML element defines the document&#x27;s title that is shown in a browser&#x27;s
+                title bar or a page&#x27;s tab. It only contains text; tags within the element are ignored.
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                &#x3C;title&#x3E;Grandma&#x27;s Heavy Metal Festival Journal&#x3C;/title&#x3E;
+            </code>
+
+        </section>
+
+        <!-- Body Section -->
+        <section class="main-section" id="body">
+
+            <header>
+                <h2>body</h2>
+            </header>
+            <p>
+                The &#x3C;body&#x3E; HTML element represents the content of an HTML document. There can be only one
+                &#x3C;body&#x3E; element in a document.
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+&#x3C;head&#x3E;
+    &#x3C;title&#x3E;Document title&#x3C;/title&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+    &#x3C;p&#x3E;This is a paragraph&#x3C;/p&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+</pre>
+            </code>
+
+        </section>
+
+        <!-- Header Section -->
+        <section class="main-section" id="header">
+
+            <header>
+                <h2>
+                    header
+                </h2>
+            </header>
+            <p>
+                The &#x3C;header&#x3E; HTML element represents introductory content, typically a group of introductory
+                or navigational aids. It may contain some heading elements but also a logo, a search form, an author
+                name, and other elements.
+            </p>
+
+            <h3>Examples:</h3>
+            <p class="p-strong">Page header</p>
+            <code>
+                <pre class="pre-container">
+&#x3C;header&#x3E;
+  &#x3C;h1&#x3E;Main Page Title&#x3C;/h1&#x3E;
+  &#x3C;img src=&#x22;destination/folders on computer, or web address&#x22; alt=&#x22;discribe image in few wors&#x22; /&#x3E;
+&#x3C;/header&#x3E;
+</pre>
+            </code>
+
+            <p class="p-strong">Article Header</p>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;article&#x3E;
+  &#x3C;header&#x3E;
+    &#x3C;h2&#x3E;The Planet Earth&#x3C;/h2&#x3E;
+    &#x3C;p&#x3E;
+      Posted on Wednesday, &#x3C;time datetime=&#x22;2017-10-04&#x22;&#x3E;4 October 2017&#x3C;/time&#x3E; by
+      Jane Smith
+    &#x3C;/p&#x3E;
+  &#x3C;/header&#x3E;
+  &#x3C;p&#x3E;
+    We live on a planet that&#x27;s blue and green, with so many things still unseen.
+  &#x3C;/p&#x3E;
+  &#x3C;p&#x3E;&#x3C;a href=&#x22;https://example.com/the-planet-earth/&#x22;&#x3E;Continue reading&#x2026;&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+&#x3C;/article&#x3E;
+</pre>
+            </code>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="main-section" id="footer">
+
+            <header>
+                <h2>footer</h2>
+            </header>
+
+            <p>
+                The &#x3C;footer&#x3E; HTML element represents a footer for its nearest ancestor sectioning content or
+                sectioning root element. A &#x3C;footer&#x3E; typically contains information about the author of the
+                section, copyright data or links to related documents.
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                &#x3C;footer&#x3E;
+                Some copyright info or perhaps some author info for an &lt;article&gt
+                &#x3C;/footer&#x3E;
+            </code>
+
+        </section>
+
+        <!-- Article Section -->
+        <section class="main-section" id="article">
+
+            <header>
+                <h2>article</h2>
+            </header>
+
+            <p>
+                &#x3C;article&#x3E;: The Article Contents element
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;article class=&#x22;film_review&#x22;&#x3E;
+  &#x3C;h2&#x3E;Jurassic Park&#x3C;/h2&#x3E;
+  &#x3C;section class=&#x22;main_review&#x22;&#x3E;
+    &#x3C;h3&#x3E;Review&#x3C;/h3&#x3E;
+    &#x3C;p&#x3E;Dinos were great!&#x3C;/p&#x3E;
+  &#x3C;/section&#x3E;
+  &#x3C;section class=&#x22;user_reviews&#x22;&#x3E;
+    &#x3C;h3&#x3E;User reviews&#x3C;/h3&#x3E;
+    &#x3C;article class=&#x22;user_review&#x22;&#x3E;
+      &#x3C;h4&#x3E;Too scary!&#x3C;/h4&#x3E;
+      &#x3C;p&#x3E;Way too scary for me.&#x3C;/p&#x3E;
+      &#x3C;footer&#x3E;
+        &#x3C;p&#x3E;
+          Posted on
+          &#x3C;time datetime=&#x22;2015-05-16 19:00&#x22;&#x3E;May 16&#x3C;/time&#x3E;
+          by Lisa.
+        &#x3C;/p&#x3E;
+      &#x3C;/footer&#x3E;
+    &#x3C;/article&#x3E;
+    &#x3C;article class=&#x22;user_review&#x22;&#x3E;
+      &#x3C;h4&#x3E;Love the dinos!&#x3C;/h4&#x3E;
+      &#x3C;p&#x3E;I agree, dinos are my favorite.&#x3C;/p&#x3E;
+      &#x3C;footer&#x3E;
+        &#x3C;p&#x3E;
+          Posted on
+          &#x3C;time datetime=&#x22;2015-05-17 19:00&#x22;&#x3E;May 17&#x3C;/time&#x3E;
+          by Tom.
+        &#x3C;/p&#x3E;
+      &#x3C;/footer&#x3E;
+    &#x3C;/article&#x3E;
+  &#x3C;/section&#x3E;
+  &#x3C;footer&#x3E;
+    &#x3C;p&#x3E;
+      Posted on
+      &#x3C;time datetime=&#x22;2015-05-15 19:00&#x22;&#x3E;May 15&#x3C;/time&#x3E;
+      by Staff.
+    &#x3C;/p&#x3E;
+  &#x3C;/footer&#x3E;
+&#x3C;/article&#x3E;
+</pre>
+            </code>
+
+        </section>
+
+        <!-- Section's Section -->
+        <section class="main-section" id="section">
+
+            <header>
+                <h2>section</h2>
+            </header>
+
+            <p>
+                The &#x3C;section&#x3E; HTML element represents a generic standalone section of a document, which
+                doesn&#x27;t have a more specific semantic element to represent it. Sections should always have a
+                heading, with very few exceptions.
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;h1&#x3E;Choosing an Apple&#x3C;/h1&#x3E;
+&#x3C;section&#x3E;
+    &#x3C;h2&#x3E;Introduction&#x3C;/h2&#x3E;
+    &#x3C;p&#x3E;This document provides a guide to help with the important task of choosing the correct Apple.&#x3C;/p&#x3E;
+&#x3C;/section&#x3E;
+
+&#x3C;section&#x3E;
+    &#x3C;h2&#x3E;Criteria&#x3C;/h2&#x3E;
+    &#x3C;p&#x3E;There are many different criteria to be considered when choosing an Apple &#x2014; size, color, firmness, sweetness, tartness...&#x3C;/p&#x3E;
+&#x3C;/section&#x3E;
+</pre>
+            </code>
+
+        </section>
+
+        <!-- Paragraph Section -->
+        <section class="main-section" id="p">
+
+            <header>
+                <h2>p</h2>
+            </header>
+
+            <p>
+                The &#x3C;p&#x3E; HTML element represents a paragraph. Paragraphs are usually represented in visual
+                media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but
+                HTML paragraphs can be any structural grouping of related content, such as images or form fields.
+
+                Paragraphs are block-level elements, and notably will automatically close if another block-level element
+                is parsed before the closing &#x3C;/p&#x3E; tag.
+            </p>
+
+            <ul class="ul-container">
+                <li><span class="note-dec">Note</span>: The align attribute on &#x3C;p&#x3E; tags is obsolete and
+                    shouldn&#x27;t be used.</li>
+            </ul>
+
+            <h3>Examples:</h3>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;p&#x3E;
+    Geckos are a group of usually small, usually nocturnal lizards.
+    They are found on every continent except Australia.
+&#x3C;/p&#x3E;
+ 
+&#x3C;p&#x3E;Some species live in houses where they hunt insects attracted by artificial light.&#x3C;/p&#x3E;
+</pre>
+            </code>
+
+        </section>
+
+        <!-- Div Section -->
+        <section class="main-section" id="div">
+
+            <header>
+                <h2>div</h2>
+            </header>
+
+            <p>
+                The &#x3C;div&#x3E; HTML element is the generic container for flow content. It has no effect on the
+                content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some
+                kind of layout model like Flexbox is applied to its parent element).
+            </p>
+
+            <ul class="ul-container">
+                <li>
+                    <span class="note-dec">Note</span>: The align attribute is obsolete; do not use it anymore. Instead,
+                    you should use CSS properties or techniques such as CSS Grid or CSS Flexbox to align and position
+                    &#x3C;div&#x3E; elements on the page.
+                </li>
+            </ul>
+
+            <h3>Example:</h3>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;div&#x3E;
+  &#x3C;p&#x3E;
+    Any kind of content here. Such as &lt;p&gt;, &lt;table&gt;. You name it!
+  &#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+</pre>
+            </code>
+
+        </section>
+
+        <!-- Span Section -->
+        <section class="main-section" id="span">
+
+            <header>
+                <h2>span</h2>
+            </header>
+
+            <p>
+                The &#x3C;span&#x3E; HTML element is a generic inline container for phrasing content, which does not
+                inherently represent anything. It can be used to group elements for styling purposes (using the class or
+                id attributes), or because they share attribute values, such as lang. It should be used only when no
+                other semantic element is appropriate. &#x3C;span&#x3E; is very much like a &#x3C;div&#x3E; element, but
+                &#x3C;div&#x3E; is a block-level element whereas a &#x3C;span&#x3E; is an inline element.
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                &#x3C;p&#x3E;&#x3C;span&#x3E;Some text&#x3C;/span&#x3E;&#x3C;/p&#x3E;
+            </code>
+
+        </section>
+
+        <!-- Img Section -->
+        <section class="main-section" id="img">
+
+            <header>
+                <h2>img</h2>
+            </header>
+
+            <p>
+                The &#x3C;img&#x3E; HTML element embeds an image into the document.
+            </p>
+
+            <ul class="ul-container">
+                <li>
+                    <span class="note-dec">Note</span>: Browsers do not always display images. There are a number of
+                    situations in which a browser might not display images, such as:
+                    Non-visual browsers (such as those used by people with visual impairments)
+                    The user chooses not to display images (saving bandwidth, privacy reasons)
+                    The image is invalid or an unsupported type
+                    In these cases, the browser may replace the image with the text in the element's alt attribute. For
+                    these reasons and others, provide a useful value for alt whenever possible.
+                </li>
+            </ul>
+
+            <h3>Example:</h3>
+
+            <code>
+                &#x3C;img src=&#x22;destination/folders on computer, or web address&#x22; alt=&#x22;discribe image in
+                few words&#x22; /&#x3E;
+            </code>
+
+        </section>
+
+        <!-- Embed Section -->
+        <section class="main-section" id="embed">
+
+            <header>
+                <h2>embed</h2>
+            </header>
+
+            <p>
+                The &#x3C;embed&#x3E; HTML element embeds external content at the specified point in the document. This
+                content is provided by an external application or other source of interactive content such as a browser
+                plug-in.
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;embed
+  type=&#x22;video/quicktime&#x22;
+  src=&#x22;movie.mov&#x22;
+  width=&#x22;640&#x22;
+  height=&#x22;480&#x22;
+  title=&#x22;Title of my video&#x22; /&#x3E;
+</pre>
+            </code>
+
+        </section>
+
+        <!-- Progress Section -->
+        <section class="main-section" id="progress">
+
+            <header>
+                <h2>progress</h2>
+            </header>
+
+            <p>
+                The &#x3C;progress&#x3E; HTML element displays an indicator showing the completion progress of a task,
+                typically displayed as a progress bar.
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                &#x3C;label for=&#x22;file&#x22;&#x3E;File progress:&#x3C;/label&#x3E;
+                &#x3C;progress id=&#x22;file&#x22; max=&#x22;100&#x22; value=&#x22;70&#x22;&#x3E; 70%
+                &#x3C;/progress&#x3E;<br><br>
+                <label for="file">File progress:</label>
+                <progress id="file" max="100" value="70"> 70% </progress>
+            </code>
+
+        </section>
+
+        <!-- Nav Section -->
+        <section class="main-section" id="nav">
+
+            <header>
+                <h2>nav</h2>
+            </header>
+
+            <p>
+                The &#x3C;nav&#x3E; HTML element represents a section of a page whose purpose is to provide navigation
+                links, either within the current document or to other documents. Common examples of navigation sections
+                are menus, tables of contents, and indexes.
+            </p>
+
+            <ul class="ul-container">
+                <li>
+                    It&#x27;s not necessary for all links to be contained in a &#x3C;nav&#x3E; element. &#x3C;nav&#x3E;
+                    is intended only for major block of navigation links; typically the &#x3C;footer&#x3E; element often
+                    has a list of links that don&#x27;t need to be in a &#x3C;nav&#x3E; element.
+                </li>
+                <br>
+                <li>
+                    A document may have several &#x3C;nav&#x3E; elements, for example, one for site navigation and one
+                    for intra-page navigation.
+                </li>
+            </ul>
+
+            <h3>Example:</h3>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;nav class=&#x22;menu&#x22;&#x3E;
+  &#x3C;ul&#x3E;
+    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Home&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;About&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Contact&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+  &#x3C;/ul&#x3E;
+&#x3C;/nav&#x3E;
+</pre>
+            </code>
+
+        </section>
+
+        <!-- Unordered Lists Section -->
+        <section class="main-section" id="ul">
+
+            <header>
+                <h2>ul</h2>
+            </header>
+
+            <p>
+                The &#x3C;ul&#x3E; HTML element represents an unordered list of items, typically rendered as a bulleted
+                list.
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;ul&#x3E;
+  &#x3C;li&#x3E;first item&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;second item&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;third item&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;                   
+</pre>
+            </code>
+
+        </section>
+
+        <!-- Ordered Lists Section -->
+        <section class="main-section" id="ol">
+
+            <header>
+                <h2>ol</h2>
+            </header>
+
+            <p>
+                The &#x3C;ol&#x3E; HTML element represents an ordered list of items &#x2014; typically rendered as a
+                numbered list.
+            </p>
+
+            <h3>Example:</h3>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;ol&#x3E;
+  &#x3C;li&#x3E;Fee&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;Fi&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;Fo&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;Fum&#x3C;/li&#x3E;
+&#x3C;/ol&#x3E;
+</pre>
+            </code>
+
+        </section>
+
+        <!-- List Items Section -->
+        <section class="main-section" id="li">
+
+            <header>
+                <h2>li</h2>
+            </header>
+
+            <p>
+                The &#x3C;li&#x3E; HTML element is used to represent an item in a list. It must be contained in a parent
+                element: an ordered list (&#x3C;ol&#x3E;), an unordered list (&#x3C;ul&#x3E;), or a menu
+                (&#x3C;menu&#x3E;). In menus and unordered lists, list items are usually displayed using bullet points.
+                In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or
+                letter.
+            </p>
+
+            <h3>Examples:</h3>
+
+            <p class="p-strong">Ordered List</p>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;ol&#x3E;
+  &#x3C;li&#x3E;first item&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;second item&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;third item&#x3C;/li&#x3E;
+&#x3C;/ol&#x3E;
+</pre>
+            </code>
+
+            <p class="p-strong">Unordered List</p>
+
+            <code>
+                <pre class="pre-container">
+&#x3C;ul&#x3E;
+  &#x3C;li&#x3E;first item&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;second item&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;third item&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+</pre>
+            </code>
+
+            <p>and many others.</p>
+
+            <h3>
+                Reference
+            </h3>
+
+            <ul>
+                <li>All the documentation in this page is taken from <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN</a></li>
+            </ul>
+
+        </section>
+
+    </main>
+    <footer class="footer-container">
+        <p>
+            Free Code Camp project &#x2022; Technical Documentation Page
+        </p>
+    </footer>
+</body>
+
+</html>
