@@ -1,3 +1,4 @@
-Free Code Camp project - Technical documentation page
+This is a Technical Documentation Page project created using HTML and CSS, as part of the FreeCodeCamp Responsive Web Design Certification.
+The layout is responsive, includes a fixed sidebar for navigation, and demonstrates semantic structure for documentation-style content.
 
-See this page live at: https://arnasne.github.io/FCC-Technical-Documentation-Page/
+👉 Live preview: https://arnasne.github.io/FCC-Technical-Documentation-Page/
